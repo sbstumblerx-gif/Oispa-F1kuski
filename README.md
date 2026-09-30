@@ -1,4 +1,4 @@
-# Oispa Esaa!
-Pystytkö juomaan monta Energia Juomaa ja tekemään niistä parempia?
+# Oispa F1-kuski!
+pystytkö kehittymään kuljettajana ja nousemaan maailmanmestariksi?
 
 Pelaa [täällä](https://lekagh.github.io/Oispa-Esaa/)!
