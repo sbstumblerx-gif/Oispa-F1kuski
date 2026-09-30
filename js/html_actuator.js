@@ -155,7 +155,8 @@ HTMLActuator.prototype.updateScore = function (score) {
     addition.textContent = "+" + difference;
     this.scoreContainer.appendChild(addition);
 
-    var message = dogeSayings[Math.floor(Math.random() * dogeSayings.length)];
+    var sayings = (typeof getPopupSayings === "function") ? getPopupSayings() : dogeSayings;
+    var message = sayings[Math.floor(Math.random() * sayings.length)];
     var messageElement = document.createElement("p");
     messageElement.textContent = message
     var left = 'left:' + Math.round(Math.random() * 20 + 30) + '%;'
