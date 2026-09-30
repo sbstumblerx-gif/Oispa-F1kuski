@@ -269,17 +269,17 @@ h1.title {
       font-weight: bold;}
 
 .score-container, .best-container {
-  width: 95px;
+  width: 125px;
   position: relative;
   display: inline-block;
   background: #ccc;
-  padding: 22px 10px 8px;
+  padding: 22px 14px 8px;
 /*  font-size: 25px;*/
-  height: 28px;
+  height: 36px;
   line-height: 28px;
   font-weight: bold;
   border-radius: 3px;
-  color: white;
+  color: #333;
   text-align: center;
   box-sizing: border-box; }
   .score-container:after, .best-container:after {
@@ -757,11 +757,12 @@ hr {
 
   .score-container, .best-container {
     margin-top: 0;
-    padding: 22px 8px 8px;
-    width: 95px;
-    min-width: 95px;
+    padding: 22px 10px 8px;
+    width: 120px;
+    min-width: 120px;
     height: 58px;
     line-height: 28px;
+    color: #333;
   }
 
   .heading {
