@@ -14,19 +14,19 @@ function HTMLActuator() {
 }
 
 dogeSayings = [
-  'Pärinät!', 
-  'ES <3',
-  'Megis!',
-  'Monsua!',
-  'Sokerihumala!',
-  'Mopo viritetty!',
-  'Kongia <3',
-  'Red Bullia <3',
-  'Battery!',
-  'Pinkki Monsu <3',
-  'Red Devilii!',
-  'Tehoa lisää!',
-  'Kultaista Red Devilii!'
+  'Parabolica!',
+  'Paalupaikka!',
+  'Ferrarii!',
+  'Shamppanjaa!',
+  'Softeilla!',
+  'Mersu <3',
+  'Verstappen!',
+  'Hamilton!',
+  'Monacoon!',
+  'Podium!',
+  'We are the champions',
+  'Yksi kierros vielä!',
+  'Box box!'
 ]
 
 HTMLActuator.prototype.actuate = function (grid, metadata) {
@@ -108,7 +108,7 @@ HTMLActuator.prototype.addTile = function (tile) {
   // Add the inner part of the tile to the wrapper
   wrapper.appendChild(inner);
 
-  // Put the tile on the board
+  // Put the inner part of the tile to the wrapper
   this.tileContainer.appendChild(wrapper);
 };
 
@@ -237,4 +237,3 @@ HTMLActuator.prototype.goKatko = function () {
     this.katkoViesti.appendChild(messageElement);
     return true;
 }
-
