@@ -18,14 +18,21 @@
   <meta property="og:type" content="website" />
   <meta property="og:image" content="" />
   <meta property="og:image:type" content="image/png" />
+  <script src="js/language.js"></script>
 </head>
 <body>
   <div class="container">
     <div class="heading">
-      <h1 class="title">Oispa F1-kuski</h1>
+      <div class="title-row">
+        <h1 class="title" data-i18n="title">Oispa F1-kuski</h1>
+        <div class="language-switch">
+          <button type="button" class="language-button active" data-language="fi">FI</button>
+          <button type="button" class="language-button" data-language="en">EN</button>
+        </div>
+      </div>
       <div class="scores-container">
-        <div class="score-container">0</div>
-        <div class="best-container">0</div>
+        <div class="score-container" data-i18n-score="score">0</div>
+        <div class="best-container" data-i18n-score="best">0</div>
       </div>
     </div>
 
@@ -39,17 +46,17 @@
       <div class="info">
         <!-- <div class="hide-info"><a>HIDE</a></div> -->
         <br />
-       <p>Yhdistä samanlaiset kuskit saadaksesi paremman kuljettajan!</p>
-       <p>Oispa F1-kuski by <a href="https://github.com/LeKaGH" target="_blank">LeKaGH.</a>
-       <small>Koodi käyttää <a href="http://oispakalussa.tk/" target="_blank">Oispa KaLussa</a>.<br />pelin koodia, kiitos heille mahtavasta koodista!</small>
-<p>Kuvat: Googlen kuvahaku. </p>
+       <p data-i18n="instructions">Yhdistä samanlaiset kuskit saadaksesi paremman kuljettajan!</p>
+       <p data-i18n="credits">Oispa F1-kuski by <strong>Stumblerx.</strong></p>
+       <small data-i18n="codeCredit">Koodi käyttää <a href="http://oispakalussa.tk/" target="_blank">Oispa KaLussa</a>.<br />pelin koodia, kiitos heille mahtavasta koodista!</small>
+<p data-i18n="images">Kuvat: Googlen kuvahaku.</p>
 
       </div>
       <div class="game-message">
         <p></p>
         <div class="lower">
-	        <a class="keep-playing-button">Jatka peliä</a>
-          <a class="retry-button">Yritä uudestaan</a>
+	        <a class="keep-playing-button" data-i18n="continueButton">Jatka peliä</a>
+          <a class="retry-button" data-i18n="retryButton">Yritä uudestaan</a>
         </div>
       </div>
 
@@ -89,14 +96,14 @@
         <div class="katko-container katko-container-color">
       <a TITLE="Laihduta itseäsi ja menetä kaikki pienet Energia Juomat!
       " class="go-katko">Käy varikolla</a>
-      <p class="pit-description">Kun käyt varikolla, menetät 1000 pistettä ja sillä välin mekaanikot vievät pois heikot kuskisi.</p>
+      <p class="pit-description" data-i18n="pitDescription">Kun käyt varikolla, menetät 1000 pistettä ja sillä välin mekaanikot vievät pois heikot kuskisi.</p>
     </div>
         <div class="info-container">
-      <a TITLE="Tietoja pelistä" class="show-info">OHJEET</a>
+      <a TITLE="Tietoja pelistä" class="show-info" data-i18n="helpButton">OHJEET</a>
     </div>
     </div>
           <p class="game-explanation">
-          Yhdistä samanlaiset kuskit saadaksesi paremman kuljettajan!<br />
+          <span data-i18n="instructions">Yhdistä samanlaiset kuskit saadaksesi paremman kuljettajan!</span><br />
 <br /><br />
   <script src="js/animframe_polyfill.js"></script>
   <script src="js/keyboard_input_manager.js"></script>
