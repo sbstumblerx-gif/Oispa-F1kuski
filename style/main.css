@@ -209,14 +209,17 @@ h1.title {
     border: 1px solid white;
     background: #ccc;
     padding: 10px 15px;
-    height: 10px;
-    line-height: 10px;
+    min-height: 10px;
+    height: auto;
+    line-height: 14px;
     font-size:10px;
     font-weight: bold;
     border-radius: 3px;
     color: white;
     margin-top: 8px;
-    text-align: center; }
+    text-align: center;
+    white-space: nowrap;
+    box-sizing: border-box; }
       .info-container a, .hide-info a, .katko-container a {
         color:#222;
         text-decoration:none;}
@@ -246,29 +249,30 @@ h1.title {
       font-weight: bold;}
 
 .score-container, .best-container {
-  width: 60px;
+  width: 95px;
   position: relative;
   display: inline-block;
   background: #ccc;
-  padding: 15px 25px;
+  padding: 22px 10px 8px;
 /*  font-size: 25px;*/
-  height: 25px;
-  line-height: 42px;
+  height: 28px;
+  line-height: 28px;
   font-weight: bold;
   border-radius: 3px;
   color: white;
-
-  text-align: center; }
+  text-align: center;
+  box-sizing: border-box; }
   .score-container:after, .best-container:after {
     position: absolute;
     width: 100%;
-    top: 10px;
+    top: 5px;
     left: 0;
     text-transform: uppercase;
-    font-size: 12px;
-    line-height: 13px;
+    font-size: 10px;
+    line-height: 12px;
     text-align: center;
-    color: #000; }
+    color: #000;
+    white-space: nowrap; }
   .score-container .score-addition, .best-container .score-addition {
     position: absolute;
     right: 30px;
@@ -733,8 +737,11 @@ hr {
 
   .score-container, .best-container {
     margin-top: 0;
-    padding: 15px 10px;
-    min-width: 80px;
+    padding: 22px 8px 8px;
+    width: 95px;
+    min-width: 95px;
+    height: 58px;
+    line-height: 28px;
   }
 
   .heading {
