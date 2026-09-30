@@ -232,14 +232,32 @@ h1.title {
 
 .katko-container .pit-description {
     display: block;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
     width: 240px;
-    margin: 8px auto 0;
+    margin: 8px 0 0;
     color: #000;
     font-size: 11px;
     line-height: 15px;
     font-weight: normal;
     text-align: center;
-    white-space: normal; }
+    white-space: normal;
+}
+
+.buttons-container .info-container {
+    position: relative;
+}
+
+.lower-container .buttons-container {
+    margin-bottom: 95px;
+}
+
+.game-explanation {
+    clear: both;
+}
+
       .info-container a, .hide-info a, .katko-container a {
         color:#222;
         text-decoration:none;}
