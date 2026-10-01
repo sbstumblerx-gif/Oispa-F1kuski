@@ -13,7 +13,8 @@ var translations = {
     pitDescription: "Kun käyt varikolla, menetät 1000 pistettä ja sillä välin mekaanikot vievät pois heikot kuskisi.",
     helpButton: "OHJEET",
     continueButton: "Jatka peliä",
-    retryButton: "Yritä uudestaan"
+    retryButton: "Yritä uudestaan",
+    gameOver: "Hävisit!"
   },
   en: {
     title: "If I was F1-driver",
@@ -27,7 +28,8 @@ var translations = {
     pitDescription: "When you use the pits you lose 1000 points and mechanics take out all your weak drivers.",
     helpButton: "INSTRUCTIONS",
     continueButton: "Keep playing",
-    retryButton: "Try again"
+    retryButton: "Try again",
+    gameOver: "You lost"
   }
 };
 
