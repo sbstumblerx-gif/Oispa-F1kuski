@@ -30,6 +30,7 @@
           <button type="button" class="language-button" data-language="en">EN</button>
         </div>
       </div>
+      <button type="button" class="changelog-toggle" id="changelogToggle" aria-label="Changelog" title="Changelog">📋</button>
       <div class="scores-container">
         <div class="score-container" data-i18n-score="score">0</div>
         <div class="best-container" data-i18n-score="best">0</div>
@@ -103,6 +104,19 @@
     </div>
     </div>
           
+  <section class="changelog-panel" id="changelogPanel" hidden aria-label="Changelog">
+    <div class="changelog-header"><h2>Changelog</h2><button type="button" id="changelogClose" aria-label="Close">×</button></div>
+    <div id="changelogEntries" class="changelog-entries"></div>
+    <div id="changelogAdmin" class="changelog-admin" hidden>
+      <h3>Admin: add entry</h3>
+      <form id="changelogForm">
+        <label for="changelogTitle">Title</label><input id="changelogTitle" maxlength="120" required>
+        <label for="changelogText">Text</label><textarea id="changelogText" maxlength="2000" rows="4" required></textarea>
+        <button type="submit">Publish</button>
+      </form>
+    </div>
+  </section>
+  <script src="js/changelog.js"></script>
   <script src="js/animframe_polyfill.js"></script>
   <script src="js/keyboard_input_manager.js"></script>
   <script src="js/html_actuator.js"></script>
