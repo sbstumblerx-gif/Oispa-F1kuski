@@ -1098,3 +1098,33 @@ hr {
     padding: 3px 6px;
   }
 }
+
+
+/* Changelog */
+.heading { position: relative; }
+.changelog-toggle {
+  float: right; margin: 0 0 0 8px; padding: 7px 10px; border: 0;
+  border-radius: 4px; background: #e5e5e5; color: #222; cursor: pointer;
+  font-size: 18px; line-height: 1;
+}
+.changelog-panel {
+  clear: both; position: relative; z-index: 20; margin: 12px 0 18px;
+  padding: 14px; border: 1px solid #ccc; border-radius: 6px;
+  background: rgba(255,255,255,.97); color: #222; box-shadow: 0 3px 12px rgba(0,0,0,.12);
+}
+.changelog-header { display:flex; align-items:center; justify-content:space-between; }
+.changelog-header h2 { margin:0 0 10px; font-size:20px; }
+.changelog-header button { border:0; background:transparent; font-size:24px; cursor:pointer; }
+.changelog-entry { padding:10px 0; border-top:1px solid #ddd; }
+.changelog-entry h3 { margin:0 0 4px; font-size:16px; }
+.changelog-entry time { display:block; color:#666; font-size:11px; margin-bottom:6px; }
+.changelog-entry p { margin:0; white-space:pre-wrap; overflow-wrap:anywhere; }
+.changelog-admin { margin-top:12px; padding-top:12px; border-top:2px solid #ccc; }
+.changelog-admin h3 { margin:0 0 8px; font-size:15px; }
+.changelog-admin form { display:grid; gap:6px; }
+.changelog-admin input, .changelog-admin textarea { width:100%; box-sizing:border-box; padding:8px; border:1px solid #bbb; border-radius:3px; font:inherit; }
+.changelog-admin form button { justify-self:start; padding:7px 12px; border:0; border-radius:3px; background:#333; color:#fff; cursor:pointer; }
+@media screen and (max-width:480px) {
+  .changelog-toggle { margin-top:8px; }
+  .changelog-panel { width:100%; box-sizing:border-box; }
+}
